@@ -1,0 +1,252 @@
+/* Universal Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    display: block;
+    font-weight: 800;
+    font-size: 2rem;
+    width: 100%;
+    background-color: white;
+    z-index: 20;
+    margin-top: 0;
+    text-align: center;
+}
+
+.logo img{
+    width: 15rem;
+}
+
+nav {
+    display: inline-block;
+    align-items: end;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.75rem 3rem;
+    color: black;
+    margin: 0 2rem;
+}
+
+nav a:hover {
+    background-color: rgb(146, 15, 158);
+    color: white;
+}
+
+.banner {
+    background-image: url(./images/bring-art-to-life.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 40rem;
+}
+
+.banner-info {
+    background-color: rgb(146, 15, 158);
+    color: white;
+    background-size: cover;
+    width: 30%;
+    height: 100%;
+    padding-top: 15rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+.banner-info button {
+    font-size: 1.75rem;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 1600px) {
+    .banner-info {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .banner-info {
+        width: 100%;
+    }
+}
+
+/* Mission Styles */
+#mission-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mission {
+    display: flex;
+    align-items: center;
+    background-image: url(./images/purple-circle-background.jpg);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+}
+
+.mission .info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mission h1 {
+    font-size: 4rem;
+}
+
+.mission h4 {
+    font-size: 1.5rem;
+    padding: 5rem;
+}
+
+/* Features Style */
+#features-block {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+.features img {
+    margin: 50px;
+    float: center;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+/* Newsletter Style */
+.newsletter-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 30rem;
+    background-color: rgb(233, 218, 233);
+}
+
+.newsletter h1 {
+    font-size: 4rem;
+}
+
+.newsletter a {
+    font-size: 2rem;
+}
+
+.newsletter form {
+    font-size: 2rem;
+}
+
+.newsletter input {
+    width: 30rem;
+    height: 2rem;
+    font-size: 2rem;
+}
+
+.newsletter button {
+    margin: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .newsletter input {
+        width: 20rem;
+    }
+}
+
+/* Footer Style */
+footer {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(146, 15, 158);
+    height: 12rem;
+    color: white;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding-left: 2rem;
+}
+
+.footer-left a {
+    padding: 0.5rem 0rem;
+    font-weight: 800;
+    color: white;
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.footer-middle button {
+    margin-top: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-weight: 900;
+    padding-right: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-left {
+        padding-left: 0;
+    }
+
+    .footer-middle button {
+        display: flex;
+        align-self: center;
+        width: 15rem;
+    }
+
+    .footer-right {
+        padding-right: 0;
+    }
+}
